@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    color: var(--secondary-color);
+}
+
+:root {
+    --main-color: #38B6FF;
+    --secondary-color: #253745;
+    --dark-gray-color: #bbbbbb;
+    --light-grey-color: #EDEDED;
+    --black-color: #333333;
+    --white-color: #FFF5EE;
+}
+
+h1{
+    font-family: "Genos",sans-serif; 
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+
+button {
+    background: var(--main-color);
+    border: none;
+    padding: 10px 30px;
+    color: var(--white-color);
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+.hero-continer {
+    width: 880px;
+    margin: 0px auto;
+}
+
+/* hero sectie*/
+.hero-background {
+    background-image: url(images/headerfoto.png);
+    background-size: cover;
+    height: 80vh;
+}
+
+/* nav */
+nav{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main-logo {
+    width: 300px;
+
+}
+
+.nav-links  {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.nav-active {
+    color: var(--main-color);
+    transition: 0.2s;
+}
+
+.nav-active:hover {
+    color: var(--secondary-color);
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* hero content */
+.hero-content {
+    padding: 200px 0px;
+    color: var(--white-color);
+}
+
+#hero-titel{
+    font-family: "Genos", sans-serif;
+    font-size: 60px;
+    color: var(--white-color);
+}
+
+#hero-text {
+    font-weight: 300;
+    width: 600px;
+}
+
+#hero-btn {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+/* hero blocks */
+.hero-blocks-contianer {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    bottom: 60px;
+    flex-wrap: wrap;
+}
+
+
+#hero-block-onswerk {
+    background: var(--secondary-color);
+    padding: 40px 30px;
+    width: 500px;
+    border-radius: 20px;
+    color: var(--white-color);
+}
+
+#hero-block-contact {
+    background: var(--main-color);
+    padding: 40px 30px;
+    width: 350px;
+    border-radius: 20px;
+    color: var(--white-color);
+}
+
+.hero-block-titel {
+    margin-bottom: 20px;
+}
+
+.hero-block-text {
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+#hero-block-link-ons-werk {
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#hero-block-link-ons-werk {
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#hero-block-link-contact {
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link-hover:hover {
+    color: var(--dark-gray-color);
+}
+
+
+/* content */
+.content-container {
+    width: 880px;
+    margin: 0px auto;
+    margin-top: 200px;
+}
+/* wie zijn wij */
+.wie-zijn-wij-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+
+}
+
+#deskundige-titel {
+    margin: 40px 0 20px;
+}
+
+.deskundige-vinkjes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.deskundige-vinkje {
+    display: flex;
+    gap: 10px;
+}
+
+#deskundige-btn {
+    margin-top: 30px;
+}
+
+/* onze diensten */
+/* onze diensten text */
+.center-text {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.blauwe-text{
+    color: var(--main-color);
+    margin-bottom: 0px;
+}
+
+#diensten-titel {
+    margin-top: -10;
+    margin-bottom: 30px;
+}
+
+/* diensten blocken*/
+.dienstne-background {
+    background: var(--light-grey-color);
+}
+
+.diensten-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.diensten-background-img-zonnenpanelen {
+    width: 450px;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    background: linear-gradient(
+        rgba(56, 82, 231, 0.2),  
+        rgba(0, 0, 0, 0.9)  
+    ),
+   url(images/zonnenpanelen-img.png); 
+   background-size: cover;   
+}
+
+.diensten-background-img-vloerverwarming {
+    width: 450px;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    background: linear-gradient(
+        rgba(56, 82, 231, 0.2),
+        rgba(0, 0, 0, 0.9)
+    ),
+    url(images/vloerverwarming-img.png);
+    background-size: cover;
+}
+
+.diensten-background-img-data-netwerk{
+    width: 450px;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    background: linear-gradient(
+        rgba(56, 82, 231, 0.2),
+        rgba(0, 0, 0, 0.9)
+    ),
+    url(images/datanetwerk-img.png);
+    background-size: cover;
+}
+
+.diensten-background-img-data-riolering {
+    width: 450px;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    background: linear-gradient(
+        rgba(56, 82, 231, 0.2),
+        rgba(0, 0, 0, 0.9)
+    ),
+    url(images/riolering-img.png);
+    background-size: cover;
+}
+
+.diensten-content-block {
+    padding: 150px 20px 20px 30px;
+    color: var(--white-color);
+}
+
+.diensten-block-titel {
+    font-size: 20px;
+}
+
+.diensten-block-text {
+    font-weight: 200;
+    margin: 5 0 20px;
+}
+
+.diensten-link {
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.2s;
+}
+
+.diensten-link:hover {
+    color: var(--dark-gray-color);
+    
+}
+
+/* onze werkwijze */
+.werkwijze-continer {
+    margin-top: 150px;
+}
+
+
+#werkwijze-collommen {
+    display: flex;
+    text-align: center;
+    margin: 70 0px;
+    justify-content: space-between;
+}
+
+
+
+.werkwijze-colom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.werkwijze-icon {
+    background: var(--secondary-color);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.werkwijze-collom-titel {
+    margin: 5px;
+    font-size: 18px;
+}
+
+/* cta bottum */
+.cta-bottum-img{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+     url(images/CTA-bottom-img.png);
+     background-size: cover;
+    height: 300px;
+}
+
+.cta-bottum-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    color: var(--white-color);
+}
+
+#cta-bottum-titel {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+#cta-bottum-btn {
+    margin: 15px;
+    font-size: 20px;
+}
+
+/* footer */
+.footer-background {
+    background: var(--secondary-color);
+}
+
+.footer-container {
+    width: 880px;
+    margin: 0px auto;
+}
+
+/* footer logo en links */
+.footer-logo-icons-container {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 300px;
+}
+
+.footer-icons {
+    color: var(--white-color);
+    display: flex;
+    gap: 30px;
+}
+
+.footer-icon {
+    font-size: 2rem;
+}
+
+/* footer links */
+.footer-collums-container {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.footer-collum {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-collum-titel {
+    color: var(--white-color);
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+.footer-link {
+    color: var(--white-color);
+    font-weight: 100;
+    padding: 2px;
+    transition: 0.2s;
+}
+
+.footer-link:hover {
+    color: var(--dark-gray-color);
+}
